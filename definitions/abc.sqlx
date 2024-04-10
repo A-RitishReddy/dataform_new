@@ -1,0 +1,7 @@
+config{
+    type: view
+}
+
+select 1 as alkfdjljf
+union all 
+select 3 as jhljh

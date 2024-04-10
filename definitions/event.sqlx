@@ -1,0 +1,26 @@
+config {
+  type: "table",
+  name: "brz_event",
+  description: "Model representing events."
+}
+ 
+SELECT
+  event_venueid,
+  eventname,
+  starttime,
+  venue_venueid,
+  event_dateid,
+  caldate,
+  day,
+  week,
+  month,
+  qtr,
+  year,
+  holiday,
+  catid,
+  catgroup,
+  catname,
+  catdesc
+  
+FROM
+  ${ref("tickitdb")}

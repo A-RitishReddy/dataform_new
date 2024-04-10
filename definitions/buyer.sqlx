@@ -1,0 +1,28 @@
+config {
+  type: "table",
+  name: "brz_buyer",
+  description: "Model representing buyers."
+}
+ 
+SELECT
+  buyer_userid,
+  buyer_username,
+  buyer_firstname,
+  buyer_lastname,
+  buyer_city,
+  buyer_state,
+  buyer_email,
+  buyer_phone,
+  buyer_likesports,
+  buyer_liketheatre,
+  buyer_likeconcerts,
+  buyer_likejazz,
+  buyer_likeclassical,
+  buyer_likeopera,
+  buyer_likerock,
+  buyer_likevegas,
+  buyer_likebroadway,
+  buyer_likemusicals
+
+FROM
+  ${ref("tickitdb")}

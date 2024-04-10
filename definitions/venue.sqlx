@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  name: "brz_venue",
+  description: "Model representing venues."
+}
+
+SELECT
+  venue_venueid,
+  venuename,
+  venuecity,
+  venuestate,
+  venueseats
+FROM
+  ${ref("tickitdb")}

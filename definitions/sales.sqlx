@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  name: "brz_sales",
+  description: "Model representing sales transactions."
+}
+
+SELECT
+  sales_salesid,
+  sales_buyerid,
+  sales_eventid,
+  sales_dateid,
+  qtysold,
+  pricepaid,
+  commission,
+  saletime
+FROM
+  ${ref("tickitdb")}

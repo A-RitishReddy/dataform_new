@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  name: "brz_list",
+  description: "Model representing list."
+}
+
+select 
+list_listid,
+list_sellerid,
+list_eventid,
+list_dateid,
+numtickets,
+priceperticket,
+totalprice
+
+FROM  ${ref("tickitdb")}

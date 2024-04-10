@@ -1,0 +1,25 @@
+config {
+  type: "table",
+  name: "brz_seller",
+  description: "Model representing sellers."
+}
+
+SELECT
+  seller_userid,
+  seller_firstname,
+  seller_lastname,
+  seller_city,
+  seller_email,
+  seller_phone,
+  seller_likesports,
+  seller_liketheatre,
+  seller_likeconcerts,
+  seller_likejazz,
+  seller_likeclassical,
+  seller_likeopera,
+  seller_likerock,
+  seller_likevegas,
+  seller_likebroadway,
+  seller_likemusicals
+FROM
+  ${ref("tickitdb")}

@@ -1,0 +1,6 @@
+config {
+  type: "declaration",
+  database: "dbt-bq-414505",
+  schema: "dbt_raw",
+  name: "tickitdb"
+}
